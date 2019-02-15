@@ -6,13 +6,12 @@
 	_logger := goSeasLog.New()
 	
 	//第一个参数为空，将不会把日志输出到文件
-	//第二个参数是时间format，用于切分文件
-	//第三个参数 true 将把不同级别的日志再分别切分
+    //第二个参数是时间format，用于切分文件
+    //第三个参数 true 将把不同级别的日志再分别切分
     // _logger.SetLogFile("./logs/", "200601021504", true)
     // _logger.SetLogFile("./logs/", "200601021504", false)
     _logger.SetLogFile("./logs/", "2006010215", true)
-	_logger.SetLogFile("./logs/", "2006010215", true)
-	
+
 	//是否输出到终端
 	_logger.SetTerminalOut(false)
 	_logger.SetLevel(goSeasLog.Debug)
